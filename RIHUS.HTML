@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Microsoft Word Guide - Rihana Rihu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      color: #0c0c0c;
+    }
+
+    header, footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    marquee {
+      font-size: 24px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.6);
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .toolbar {
+      background-color: #f2f2f2;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .toolbar button {
+      padding: 8px 12px;
+      font-weight: bold;
+      border: 1px solid #999;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    .toolbar button:hover {
+      background-color: #ddd;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.9);
+      max-width: 900px;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    .editor {
+      padding: 30px;
+      min-height: 400px;
+      border-top: 1px solid #ccc;
+      outline: none;
+    }
+
+    h2 {
+      background-color: rgba(0, 130, 170, 0.9);
+      color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      animation: slideIn 1.5s ease-in-out;
+      margin-top: 20px;
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateX(-100%); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+
+    ol, ul {
+      background-color: rgba(0, 0, 0, 0.05);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+
+    .section {
+      padding: 20px 30px;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <marquee>RIHANA RIHU</marquee>
+
+  <header>
+    <h1>Microsoft Word Guide & Editor</h1>
+  </header>
+
+  <div class="toolbar">
+    <button onclick="format('bold')">B</button>
+    <button onclick="format('italic')">I</button>
+    <button onclick="format('underline')">U</button>
+    <button onclick="format('insertUnorderedList')">• List</button>
+    <button onclick="format('insertOrderedList')">1. List</button>
+  </div>
+
+  <div class="container">
+    <div class="editor" contenteditable="true">
+      <h2>📝 Type Your Document Below</h2>
+      <p>You can bold, italic, underline, and add lists here like MS Word.</p>
+    </div>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <p>👩‍🏫 <strong>Rihana Banu</strong> – CSC Academy Teacher</p>
+
+      <h2>Microsoft Word ke Common Terms</h2>
+      <ol>
+        <li><strong>Font:</strong> Style aur appearance jaise Arial, Times New Roman.</li>
+        <li><strong>Alignment:</strong> Text position - left, center, right.</li>
+        <li><strong>Margin:</strong> Page edge aur content ke beech ka space.</li>
+        <li><strong>Paragraph:</strong> Group of sentences.</li>
+        <li><strong>Header/Footer:</strong> Page ke upar/neeche extra info.</li>
+        <li><strong>Bullet/Numbering:</strong> Lists ke liye use hota hai.</li>
+        <li><strong>Table:</strong> Rows/columns mein data organize karna.</li>
+        <li><strong>Image:</strong> Photos ya graphics insert karna.</li>
+      </ol>
+
+      <h2>Important Tools</h2>
+      <ol>
+        <li><strong>Spell Check:</strong> Spelling mistakes detect karta hai.</li>
+        <li><strong>Grammar Check:</strong> Grammar errors highlight karta hai.</li>
+        <li><strong>Track Changes:</strong> Document editing track karta hai.</li>
+        <li><strong>Comments:</strong> Notes ya feedback dene ke liye.</li>
+      </ol>
+
+      <h2>Document Creation</h2>
+      <p>Naya document banana, save karna, print karna Word ka basic part hai.</p>
+
+      <h2>Text Formatting</h2>
+      <ul>
+        <li>Font style aur size change karna</li>
+        <li>Text alignment aur spacing</li>
+        <li>Text formatting: bold, italic, underline</li>
+      </ul>
+
+      <h2>Images & Tables</h2>
+      <ul>
+        <li>Insert karna (images, tables)</li>
+        <li>Resize aur format karna</li>
+        <li>Tables mein content organize karna</li>
+      </ul>
+
+      <h2>Free Downloadable Template</h2>
+      <p><a href="MS Word.docx" download>📄 Download Template 1</a></p>
+
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:rihanarihu44@gmail.com">rihanarihu44@gmail.com</a></p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Rihana Rihu – MS Word Style Web Page
+  </footer>
+
+  <script>
+    function format(command) {
+      document.execCommand(command, false, null);
+    }
+  </script>
+
+</body>
+</html>
